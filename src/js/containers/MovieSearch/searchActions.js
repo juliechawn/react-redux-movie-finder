@@ -10,7 +10,7 @@ export function updateMovie(name) {
 }
 
 export function searchMovie(name) {
-    const url = `http://www.omdbapi.com/?apikey=8730e0e&s=${name}`;
+    const url = `https://www.omdbapi.com/?apikey=8730e0e&s=${name}`;
     return {
         type: 'SEARCH_MOVIE',
         payload:

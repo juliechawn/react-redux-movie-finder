@@ -12,7 +12,6 @@ export default class movieSearch extends React.Component {
 
     this.handleMovieInput = this.handleMovieInput.bind(this);
     this.handleMovieSearch = this.handleMovieSearch.bind(this);
-    // this.handleDetailSearch = this.handleDetailSearch.bind(this);
   }
 
   handleMovieInput(event) {
@@ -26,13 +25,6 @@ export default class movieSearch extends React.Component {
     const { dispatch, searchName } = this.props;
     dispatch(searchMovie(searchName));
   }
-
-  // handleDetailSearch(event) {
-  //   const { dispatch } = this.props;
-  //   const { value } = event.target;
-  //   dispatch(searchDetails(value));
-  // }
-
 
   render() {
     const { searchName, movieData, imdbID } = this.props;
